@@ -3,9 +3,9 @@
 #include "md5util.h"
 
 struct md5ctx {
-	uint32_t nl, nh;		/* Number of _bits_ handled mod 2^64 */
-	uint32_t a, b, c, d;	/* Scratch buffer a, b, c, d */
-	uint8_t in[64];			/* Input data */
+	uint32_t nl, nh;      /* Number of _bits_ handled mod 2^64 */
+	uint32_t a, b, c, d;  /* Scratch buffer a, b, c, d */
+	uint8_t in[64];       /* Input data */
 };
 
 static uint8_t _md5_padding[64] = {
